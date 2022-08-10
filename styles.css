@@ -13,6 +13,7 @@ body {
     width: 100%;
     max-width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -36,8 +37,6 @@ body {
 
 .navbar-links li {
     padding: 0 20px 0 20px;
-    font-size: 16px;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -259,17 +258,58 @@ a:hover {
     display: none;
 }
 
+.home-about {
+    background: url("/Assets/about-header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0 45px 0;
+    color: white;
+}
+
+.home-about h3 {
+    width: 520px;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+}
+
+.home-about p {
+    margin: 50px 0 0 0;
+    width: 520px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.progress-bars {
+    width: 30%;
+}
+
+.progress {
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.progress-bars h4 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.progress-span-1 {
+    font-size: 18px;
+}
+
 @media (max-width: 391px) {
     .navbar-links li {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     #navbar-toggler-icon {
         width: 18px;
     }
-    
+
     .dropdown-item {
-        font-size: 7px;
+        font-size: 11px;
     }
 
     .header-tag1 {
@@ -298,19 +338,60 @@ a:hover {
         top: 70%;
         margin-left: 40px;
     }
+
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 10px 0;
+    }
+
+    .home-descr {
+        margin: auto;
+    }
+    
+    .home-about h3 {
+        width: 250px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .home-about p {
+        margin: 20px 0 0 0;
+        width: 230px;
+        font-size: 10px;
+    }
+    
+    .progress-bars {
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .progress {
+        margin-top: 3px;
+    }
+    
+    .progress-bars h4 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .progress-span-1 {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 392px) and (max-width: 575.98px) {
     .navbar-links li {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #navbar-toggler-icon {
         width: 20px;
     }
-    
+
     .dropdown-item {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .header-tag1 {
@@ -337,19 +418,58 @@ a:hover {
         font-size: 10px;
         top: 75%;
     }
+
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 15px 0;
+    }
+
+    .home-descr {
+        margin: auto;
+    }
+    
+    .home-about h3 {
+        width: 350px;
+        font-size: 20px;
+    }
+    
+    .home-about p {
+        margin: 30px 0 0 0;
+        width: 280px;
+        font-size: 13px;
+    }
+    
+    .progress-bars {
+        width: 70%;
+        margin: 30px auto;
+    }
+    
+    .progress {
+        margin-top: 3px;
+    }
+    
+    .progress-bars h4 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .progress-span-1 {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .navbar-links li {
-        font-size: 12px;
+        font-size: 15px;
     }
-    
+
     #navbar-toggler-icon {
         width: 25px;
     }
 
     .dropdown-item {
-        font-size: 11px;
+        font-size: 13px;
         padding: 10px;
     }
 
@@ -371,15 +491,54 @@ a:hover {
     .explore-button {
         font-size: 13px;
     }
+
+    .home-about {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 15px 0;
+    }
+
+    .home-descr {
+        margin: auto;
+    }
+    
+    .home-about h3 {
+        width: 430px;
+        font-size: 25px;
+    }
+    
+    .home-about p {
+        margin: 35px 0 0 0;
+        width: 350px;
+        font-size: 15px;
+    }
+    
+    .progress-bars {
+        width: 70%;
+        margin: 40px auto;
+    }
+    
+    .progress {
+        margin-top: 3px;
+    }
+    
+    .progress-bars h4 {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    
+    .progress-span-1 {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .navbar-links li {
-        font-size: 14px;
+        font-size: 17px;
     }
-    
+
     .dropdown-item {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     #header-tag1-title {
@@ -398,11 +557,43 @@ a:hover {
     .explore-button {
         font-size: 15px;
     }
+
+    .home-about {
+        padding: 50px 0 40px 0;
+    }
+    
+    .home-about h3 {
+        width: 480px;
+        font-size: 30px;
+    }
+    
+    .home-about p {
+        margin: 40px 0 0 0;
+        width: 480px;
+        font-size: 17px;
+    }
+    
+    .progress-bars {
+        width: 25%;
+    }
+    
+    .progress {
+        margin-top: 8px;
+    }
+    
+    .progress-bars h4 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    
+    .progress-span-1 {
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 992px) {
     .navbar-links li {
-        font-size: 14px;
+        font-size: 19px;
     }
 
     .navbar-links {
