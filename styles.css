@@ -87,6 +87,7 @@ body {
 
 #header-tag1-title {
     font-size: 30px;
+    font-weight: bold;
 }
 
 .header-tag-title {
@@ -312,30 +313,39 @@ a:hover {
         font-size: 11px;
     }
 
+    .header {
+        height: 60vh;
+    }
+
+    .header-overlay {
+        height: 60vh;
+    }
+
     .header-tag1 {
         margin: 0 0 0 40px;
-        top: 25%;
+        top: 15%;
     }
 
     #header-tag1-title {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #header-tag1-title-underline {
-        width: 160px;
+        width: 100px;
         height: 1px;
     }
 
     #header-tag1-paragraph {
         width: 220px;
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: bold;
         margin-top: 20px;
     }
 
     .explore-button {
         width: 150px;
         font-size: 8px;
-        top: 70%;
+        top: 45%;
         margin-left: 40px;
     }
 
@@ -394,29 +404,38 @@ a:hover {
         font-size: 12px;
     }
 
+    .header {
+        height: 70vh;
+    }
+
+    .header-overlay {
+        height: 70vh;
+    }
+
+
     .header-tag1 {
         margin: 0 0 0 70px;
         top: 20%;
     }
 
     #header-tag1-title {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     #header-tag1-title-underline {
-        width: 220px;
+        width: 200px;
         height: 1px;
     }
 
     #header-tag1-paragraph {
         width: 300px;
-        font-size: 40px;
+        font-size: 33px;
         margin-top: 20px;
     }
 
     .explore-button {
         font-size: 10px;
-        top: 75%;
+        top: 55%;
     }
 
     .home-about {
@@ -473,23 +492,32 @@ a:hover {
         padding: 10px;
     }
 
+    .header {
+        height: 80vh;
+    }
+
+    .header-overlay {
+        height: 80vh;
+    }
+
     #header-tag1-title {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #header-tag1-title-underline {
-        width: 300px;
+        width: 270px;
         height: 1px;
     }
 
     #header-tag1-paragraph {
-        width: 350px;
-        font-size: 50px;
+        width: 320px;
+        font-size: 40px;
         margin-top: 20px;
     }
 
     .explore-button {
         font-size: 13px;
+        top: 60%;
     }
 
     .home-about {
