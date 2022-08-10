@@ -38,6 +38,7 @@ body {
     padding: 0 20px 0 20px;
     font-size: 16px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .dropdown-menu {
@@ -60,6 +61,8 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     max-width: 100%;
@@ -76,7 +79,7 @@ body {
 
 .header-tag1 {
     position: absolute;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 80px;
     top: 20%;
     color: white;
     letter-spacing: 0.2em;
@@ -99,8 +102,9 @@ body {
 
 #header-tag1-paragraph {
     width: 400px;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: lighter;
+    letter-spacing: 0.1em;
 }
 
 .explore-button {
@@ -108,7 +112,7 @@ body {
     display: none;
     width: 200px;
     top: 80%;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 80px;
     z-index: 3;
     padding: 20px 40px;
     border-radius: 3px;
@@ -255,7 +259,148 @@ a:hover {
     display: none;
 }
 
-@media (min-width:992px) {
+@media (max-width: 391px) {
+    .navbar-links li {
+        font-size: 9px;
+    }
+
+    #navbar-toggler-icon {
+        width: 18px;
+    }
+    
+    .dropdown-item {
+        font-size: 7px;
+    }
+
+    .header-tag1 {
+        margin: 0 0 0 40px;
+        top: 25%;
+    }
+
+    #header-tag1-title {
+        font-size: 13px;
+    }
+
+    #header-tag1-title-underline {
+        width: 160px;
+        height: 1px;
+    }
+
+    #header-tag1-paragraph {
+        width: 220px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .explore-button {
+        width: 150px;
+        font-size: 8px;
+        top: 70%;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 392px) and (max-width: 575.98px) {
+    .navbar-links li {
+        font-size: 10px;
+    }
+
+    #navbar-toggler-icon {
+        width: 20px;
+    }
+    
+    .dropdown-item {
+        font-size: 8px;
+    }
+
+    .header-tag1 {
+        margin: 0 0 0 70px;
+        top: 20%;
+    }
+
+    #header-tag1-title {
+        font-size: 18px;
+    }
+
+    #header-tag1-title-underline {
+        width: 220px;
+        height: 1px;
+    }
+
+    #header-tag1-paragraph {
+        width: 300px;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .explore-button {
+        font-size: 10px;
+        top: 75%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-links li {
+        font-size: 12px;
+    }
+    
+    #navbar-toggler-icon {
+        width: 25px;
+    }
+
+    .dropdown-item {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    #header-tag1-title {
+        font-size: 24px;
+    }
+
+    #header-tag1-title-underline {
+        width: 300px;
+        height: 1px;
+    }
+
+    #header-tag1-paragraph {
+        width: 350px;
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .explore-button {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-links li {
+        font-size: 14px;
+    }
+    
+    .dropdown-item {
+        font-size: 12px;
+    }
+
+    #header-tag1-title {
+        font-size: 26px;
+    }
+
+    #header-tag1-title-underline {
+        width: 350px;
+        height: 1px;
+    }
+
+    #header-tag1-paragraph {
+        font-size: 55px;
+    }
+
+    .explore-button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
     .navbar-links {
         margin-left: 170px;
     }
