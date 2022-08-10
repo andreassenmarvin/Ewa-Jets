@@ -34,10 +34,6 @@ body {
     width: 30px;
 }
 
-.navbar-links {
-    margin-left: 200px;
-}
-
 .navbar-links li {
     padding: 0 20px 0 20px;
     font-size: 16px;
@@ -59,6 +55,9 @@ body {
     color: white;
 }
 
+.no-border {
+    border: none;
+}
 
 .header {
     height: 100vh;
@@ -254,4 +253,10 @@ a:hover {
 
 .span-hover {
     display: none;
+}
+
+@media (min-width:992px) {
+    .navbar-links {
+        margin-left: 170px;
+    }
 }
