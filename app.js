@@ -120,3 +120,7 @@ $(function () {
         }
     })
 })
+
+function quotationModal() {
+    
+}
