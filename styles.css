@@ -548,6 +548,29 @@ input:focus~.highlight {
     cursor: pointer;
 }
 
+.modal-success {
+    display: none;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.success-tick {
+    font-size: 30px;
+    color: #3d86e6;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(44, 43, 43, 0.6);
+    z-index: 4;
+}
+
 .footer-section {
     background: #151414;
     position: relative;

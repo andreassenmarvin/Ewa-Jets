@@ -120,3 +120,31 @@ $(function () {
         }
     })
 })
+
+// Subscription Form
+ 
+let formSubscribe = document.querySelector(".subscribe-form");
+let inputEmail = document.querySelector(".input-email")
+let modalSuccess = document.querySelector(".modal-success");
+let modalClose = document.querySelector(".modal-close");
+let overlay = document.querySelector(".modal-overlay");
+
+formSubscribe.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (inputEmail.value == null || inputEmail.value == "") {
+        inputEmail.style.borderColor = "red";
+        inputEmail.focus();
+    } else {
+        inputEmail.style.border = "none";
+        modalSuccess.style.display = "block";
+        inputEmail.value = "";
+        overlay.style.display = "block"
+    }
+})
+
+
+modalClose.addEventListener("click", () => {
+    modalSuccess.style.display = "none";
+    overlay.style.display = "none";
+})

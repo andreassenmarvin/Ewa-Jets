@@ -152,6 +152,20 @@
             </div>
         </div>
 
+        <div class="modal modal-success" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <button type="button" class="close modal-close" aria-label="Close" style="outline: none;"><i class="bi bi-x-circle" style="float: right; padding: 8px; font-size: 22px;"></i></button>
+                <div class="modal-body">
+                    <center><i class="bi bi-check-circle success-tick"></i></center>
+                    <p style="text-align: center; font-size: 20px;">You have successfully subscribed to Ewa Jets alerts and updates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-overlay"></div>
+
         <footer class="footer-section">
             <div class="container">
                 <div class="footer-cta pt-5 pb-5">
@@ -224,12 +238,12 @@
                                     <h3>Subscribe</h3>
                                 </div>
                                 <div class="footer-text mb-25">
-                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    <p>Enter your email address to subscribe to our news feed.</p>
                                 </div>
                                 <div class="subscribe-form">
-                                    <form>
-                                        <input type="text" placeholder="Email Address" required>
-                                        <button><i class="bi bi-telegram"></i></button>
+                                    <form class="subscription-form">
+                                        <input type="email" placeholder="Email Address" class="input-email">
+                                        <button type="submit"><i class="bi bi-telegram"></i></button>
                                     </form>
                                 </div>
                             </div>
