@@ -115,12 +115,8 @@ $(function () {
             success.style.display = "block";
             $(feedbackForm).trigger("reset");
             setTimeout(function () {
-            location.reload();
+                location.reload();
             }, 1000)
         }
     })
 })
-
-function quotationModal() {
-    
-}

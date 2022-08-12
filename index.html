@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
                 <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand" href="/">Ewa<span style="color: #4a89dc;">Jets</span></a>
+            <a class="navbar-brand" href="/"><img src="/Assets/logo.png" class="navbar-brand"></a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-links">
@@ -126,32 +126,129 @@
         </div>
 
         <div class="feedback-section">
-        <form class="feedback-form">
-            <h3>Give us your feedback.</h3>
-            <br />
-            <div class="group">
-                <input type="text" id="name"><span class="highlight"></span><span class="bar"></span>
-                <label>Name*</label>
+            <form class="feedback-form">
+                <h3>Give us your feedback.</h3>
+                <br />
+                <div class="group">
+                    <input type="text" id="name"><span class="highlight"></span><span class="bar"></span>
+                    <label>Name*</label>
+                </div>
+                <div class="group">
+                    <input type="text" id="message"><span class="highlight"></span><span class="bar"></span>
+                    <label>Message*</label>
+                </div>
+                <button type="submit" class="button buttonBlue">Submit
+                    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                </button>
+
+                <p style="text-align: center; color: #4a89dc; display: none;" id="form-success">Thank you for your
+                    feedback!
+                </p>
+            </form>
+
+            <div class="quotation">
+                <h5>Get a private Charter Quote</h5>
+                <button type="button" class="quote-btn" onclick="quotationModal()">Get quotation</button>
             </div>
-            <div class="group">
-                <input type="text" id="message"><span class="highlight"></span><span class="bar"></span>
-                <label>Message*</label>
+        </div>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Old Signon, JKIA, Wing B First Floor Suite 2 & 3, Nairobi.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>+254776629284</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>inquiries@ewajets.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a class="navbar-brand" href="/"><img src="/Assets/logo.png" class="navbar-brand"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Ewa Jets, providing you with the most stellar private jet charter services.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="#">Humanitarian and Relief</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Livestock and Transport</a></li>
+                                    <li><a href="#">Air Ambulance</a></li>
+                                    <li><a href="#">Heavy and Outsize</a></li>
+                                    <li><a href="#">Helicopter Charters</a></li>
+                                    <li><a href="#">Dangerous Goods</a></li>
+                                    <li><a href="#">Private Jets</a></li>
+                                    <li><a href="#">Oil & Gas</a></li>
+                                    <li><a href="#">Business Jets</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form>
+                                        <input type="text" placeholder="Email Address" required>
+                                        <button><i class="bi bi-telegram"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="button buttonBlue">Submit
-                <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-            </button>
+            <div class="copyright-area">
+                <div class="copyright-text">
+                    <p>Copyright &copy; 2022, All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
 
-            <p style="text-align: center; color: #4a89dc; display: none;" id="form-success">Thank you for your feedback!
-            </p>
-        </form>
 
-        <div class="quotation">
-            <h5>Get a private Charter Quote</h5>
-            <button class="quote-btn" onclick="quotationModal()">Get quotation</button>
-        </div>
-        </div>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"
