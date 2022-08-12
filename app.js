@@ -135,11 +135,13 @@ formSubscribe.addEventListener("submit", (e) => {
     if (inputEmail.value == null || inputEmail.value == "") {
         inputEmail.style.borderColor = "red";
         inputEmail.focus();
+        return false;
     } else {
         inputEmail.style.border = "none";
         modalSuccess.style.display = "block";
         inputEmail.value = "";
         overlay.style.display = "block"
+        return true;
     }
 })
 
