@@ -749,6 +749,20 @@ input:focus~.highlight {
     object-position: center;
 }
 
+.contact-overlay {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: rgba(44, 43, 43, 0.6);
+}
+
+.contact-title {
+    position: absolute;
+    color: white;
+    margin: 150px 0 0 50px;
+    z-index: 3;
+}
+
 section {
     display: flex;
     justify-content: center;

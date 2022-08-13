@@ -116,13 +116,13 @@ $(function () {
             $(feedbackForm).trigger("reset");
             setTimeout(function () {
                 location.reload();
-            }, 1000)
+            }, 2000)
         }
     })
 })
 
 // Subscription Form
- 
+
 let formSubscribe = document.querySelector(".subscription-form");
 let inputEmail = document.querySelector(".input-email")
 let modalSuccess = document.querySelector(".modal-success");
