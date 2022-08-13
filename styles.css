@@ -955,6 +955,57 @@ section::before {
     color: #4a89dc;
 }
 
+.about-section-a {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.about-section-a h4 {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+}
+
+.about-section-a h5 {
+    width: 350px;
+    font-size: 23px;
+    letter-spacing: 0.02em;
+    margin: auto;
+}
+
+.about-section-a h6 {
+    width: 500px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    margin: 20px auto;
+}
+
+.about-section-a p {
+    width: 400px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin: auto;
+}
+
+.about-ticks {
+    display: grid;
+    place-items: center;
+    margin: 15px;
+}
+
+.about-ticks ul {
+    list-style: none;
+}
+
+.ticks-tags {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.about-ticks i {
+    font-size: 25px;
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 90%;
@@ -1193,6 +1244,41 @@ section::before {
         font-size: 35px;
         color: #3d86e6;
     }
+    
+    .about-section-a h4 {
+        font-size: 23px;
+    }
+
+    .about-section-a h5 {
+        width: auto;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .about-section-a h6 {
+        width: auto;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .about-section-a p {
+        width: auto;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .about-ticks {
+        margin: 5px;
+    }
+
+    .ticks-tags {
+        font-size: 13px;
+        padding-left: 8px;
+    }
+
+    .about-ticks i {
+        font-size: 17px;
+    }
 }
 
 @media (min-width: 392px) and (max-width: 575.98px) {
@@ -1322,6 +1408,39 @@ section::before {
         width: 120px;
         font-size: 11px;
     }
+    
+    .about-section-a h4 {
+        font-size: 26px;
+    }
+
+    .about-section-a h5 {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .about-section-a h6 {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .about-section-a p {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .about-ticks {
+        margin: 10px;
+    }
+
+    .ticks-tags {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .about-ticks i {
+        font-size: 20px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1527,6 +1646,10 @@ section::before {
 
     .contact-header {
         height: 45vh;
+    }
+
+    .contact-overlay {
+        height: 45vh
     }
 }
 
