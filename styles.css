@@ -16,6 +16,18 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #4a89dc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(209, 207, 207);
+}
+
 #navbar {
     position: fixed;
     z-index: 4;
