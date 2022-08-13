@@ -101,23 +101,23 @@
                 <div class="formBox">
                     <div class="inputBox w50">
                         <form class="message-form">
-                            <input type="text" name="" required>
+                            <input type="text" name="" class="f-name-input" required>
                             <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" class="l-name-input" required>
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                        <input type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="email-input" required>
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="tel" minlength="10" maxlength="15" required>
+                        <input type="tel" minlength="10" maxlength="15" class="tel-input" required>
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
-                        <textarea required></textarea>
+                        <textarea class="message-textbox" required></textarea>
                         <br>
                         <span>Message</span>
                     </div>
@@ -305,6 +305,32 @@
             modalSuccess.style.display = "none";
             overlay.style.display = "none";
         })
+
+        // Message Form
+
+        var messageForm = document.querySelector(".message-form");
+        var firstName = document.querySelector(".f-name-input");
+        var lastName = document.querySelector(".l-name-input");
+        var messageEmail = document.querySelector(".email-input");
+        var messageTel = document.querySelector(".tel-input");
+        var textBox = document.querySelector(".message-textbox");
+        var messageSuccess = document.getElementById("message-success");
+
+        messageForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if ((firstName.value != "") && (lastName.value != "") && (messageEmail.value != "") && (
+                    messageTel.value != "") && (textBox.value != "")) {
+                firstName.style.borderColor = "lightblue";
+                lastName.style.borderColor = "lightblue";
+                messageEmail.style.borderColor = "lightblue";
+                messageTel.style.borderColor = "lightblue";
+                textBox.style.borderColor = "lightblue";
+                messageForm.reset();
+                messageSuccess.style.display = "block";
+
+                return true;
+            }
+        });
     </script>
 </body>
 
