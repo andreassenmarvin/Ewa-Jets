@@ -134,15 +134,15 @@ body::-webkit-scrollbar-thumb {
     transform: translate(0%, 0%);
 }
 
-a::before,
-a::after {
+.explore-button::before,
+.explore-button::after {
     content: '';
     background: none;
     position: absolute;
     z-index: -1;
 }
 
-a:hover {
+.explore-button:hover {
     cursor: pointer;
     color: white;
     text-decoration: none;
