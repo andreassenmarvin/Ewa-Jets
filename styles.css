@@ -17,7 +17,7 @@ body {
 }
 
 #navbar {
-    position: absolute;
+    position: fixed;
     z-index: 4;
     top: 0;
     padding: 10px 20px 0 20px;
@@ -741,6 +741,280 @@ input:focus~.highlight {
     color: #878787;
 }
 
+.contact-header {
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.contact-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.container .contactInfo {
+    height: 220px;
+    color: white;
+    border: 1px solid lightblue;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .contactInfo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .contactInfo ul.info {
+    position: relative;
+    margin: 20px 0;
+}
+
+.container .contactInfo ul.info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.container .contactInfo ul.info li span a {
+    color: #fff;
+    text-decoration: none;
+    width: 30px;
+    min-width: 30px;
+
+}
+
+.container .contactInfo ul.info li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.container .contactInfo ul.sci {
+    position: relative;
+    display: flex;
+}
+
+.container .contactInfo ul.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.container .contactInfo ul.sci li a {
+    text-decoration: none;
+}
+
+.container .contactForm {
+    width: 400px;
+    color: white;
+    border: 1px solid lightblue;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.container .contactForm h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.container .contactForm .formBox .inputBox {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.container .contactForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+
+.container .contactForm .formBox .inputBox.w100 {
+    width: 100%;
+}
+
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea {
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+    margin-bottom: 20px;
+}
+
+.container .contactForm .formBox .inputBox textarea {
+    height: 80px;
+}
+
+.container .contactForm .formBox .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.container .contactForm .formBox .inputBox input:focus~span,
+.container .contactForm .formBox .inputBox input:valid~span,
+.container .contactForm .formBox .inputBox textarea:focus~span,
+.container .contactForm .formBox .inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #3d86e6;
+    font-weight: 500;
+}
+
+.container .contactForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid lightblue;
+    color: #fff;
+    letter-spacing: 0.05em;
+    max-width: 150px;
+    margin: auto;
+    padding: 10px;
+
+}
+
+#message-success {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #4a89dc;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .contactInfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .container .contactForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    section::before {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .contactForm {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .container .contactInfo {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border-radius: 0px;
+    }
+
+    .container .contactInfo ul.sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container .contactForm {
+        padding: 25px;
+    }
+
+    .container .contactInfo {
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .contactInfo ul.sci {
+        margin-top: 40px;
+    }
+
+    .container .contactForm .formBox .inputBox.w50 {
+        width: 100%;
+    }
+}
+
 @media (max-width: 281px) {
     .feedback-form {
         border: none;
@@ -888,7 +1162,7 @@ input:focus~.highlight {
         text-align: center;
         font-size: 17px;
     }
-    
+
     .success-tick {
         font-size: 35px;
         color: #3d86e6;
@@ -1144,6 +1418,8 @@ input:focus~.highlight {
     .quotation button {
         width: 150px;
     }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1221,6 +1497,10 @@ input:focus~.highlight {
     .quotation {
         width: 43%;
         margin: 60px auto;
+    }
+
+    .contact-header {
+        height: 45vh;
     }
 }
 

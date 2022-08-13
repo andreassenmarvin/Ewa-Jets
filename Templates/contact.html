@@ -100,28 +100,32 @@
                 <h2>Send a Message</h2>
                 <div class="formBox">
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
-                        <span>First Name</span>
+                        <form class="message-form">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
                         <input type="text" required>
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="email" required>
+                        <input type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="tel" minlength="10" maxlength="15" required>
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
                         <textarea required></textarea>
                         <br>
-                        <span>Write your message here...</span>
+                        <span>Message</span>
                     </div>
                     <div class="inputBox w100">
                         <input type="submit" value="Send">
+
+                        <p id="message-success">Your message has been sent!</p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -206,9 +210,9 @@
                             <div class="footer-text mb-25">
                                 <p>Enter your email address to subscribe to our news feed.</p>
                             </div>
-                            <div class="subscribe-form">
+                            <div class="subscribe-form" id="subscribe-form">
                                 <form class="subscription-form">
-                                    <input type="text" placeholder="Email Address" class="input-email"
+                                    <input type="text" placeholder="Email Address" class="input-email" id="input-email"
                                         pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                                     <button type="submit"><i class="bi bi-telegram"></i></button>
                                 </form>
@@ -234,7 +238,59 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="/app.js"></script>
+    <script>
+        // Navbar
+
+        $(function () {
+            $("#navbar-toggler-icon").click(function () {
+                $("#navbarSupportedContent").slideToggle();
+                $(".form").css({
+                    "margin": "auto"
+                })
+            })
+
+            $("#privateDropdown").click(function () {
+                $("#dropdown1").slideToggle();
+                $("#dropdown2").slideUp();
+            })
+
+            $("#airDropdown").click(function () {
+                $("#dropdown2").slideToggle();
+                $("#dropdown1").slideUp();
+            })
+        });
+
+
+        // Subscription Form
+
+        let formSubscribe = document.querySelector(".subscription-form");
+        let inputEmail = document.querySelector(".input-email")
+        let modalSuccess = document.querySelector(".modal-success");
+        let modalClose = document.querySelector(".modal-close");
+        let overlay = document.querySelector(".modal-overlay");
+
+        formSubscribe.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            if (inputEmail.value == null || inputEmail.value == "") {
+                inputEmail.style.borderColor = "red";
+                inputEmail.focus();
+                return false;
+            } else {
+                inputEmail.style.border = "none";
+                modalSuccess.style.display = "block";
+                inputEmail.value = "";
+                overlay.style.display = "block"
+                return true;
+            }
+        })
+
+
+        modalClose.addEventListener("click", () => {
+            modalSuccess.style.display = "none";
+            overlay.style.display = "none";
+        })
+    </script>
 </body>
 
 </html>

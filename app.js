@@ -123,7 +123,7 @@ $(function () {
 
 // Subscription Form
  
-let formSubscribe = document.querySelector(".subscribe-form");
+let formSubscribe = document.querySelector(".subscription-form");
 let inputEmail = document.querySelector(".input-email")
 let modalSuccess = document.querySelector(".modal-success");
 let modalClose = document.querySelector(".modal-close");
