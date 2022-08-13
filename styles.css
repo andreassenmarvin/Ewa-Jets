@@ -1006,6 +1006,65 @@ section::before {
     font-size: 25px;
 }
 
+.about-ticks p {
+    width: 550px;
+    margin: 10px 0;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+#counter-stats {
+    background: url("https://images.pond5.com/dark-world-map-animate-background-footage-126370447_iconl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#counter-stats .container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 20px 10px;
+    padding: 5px 20px;
+    border: 1px solid lightblue;
+}
+
+.row hr {
+    display: none;
+    width: 40%;
+    margin: auto;
+    border-color:lightblue;
+}
+
+.stats {
+    text-align: center;
+    font-weight: 300;
+    color: white;
+}
+
+.counting {
+    padding: 0 10px;
+}
+
+.stats h5 {
+    font-size: 19px;
+}
+
+.stats i {
+    font-size: 40px;
+    color: white;
+}
+
+.bi-airplane {
+    width: 40px;
+    height: 40px;
+    margin: 6px 0;
+    color: white;
+}
+
 @media (max-width: 1200px) {
     .container {
         width: 90%;
@@ -1244,7 +1303,7 @@ section::before {
         font-size: 35px;
         color: #3d86e6;
     }
-    
+
     .about-section-a h4 {
         font-size: 23px;
     }
@@ -1278,6 +1337,35 @@ section::before {
 
     .about-ticks i {
         font-size: 17px;
+    }
+
+    .about-ticks p {
+        width: auto;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    #counter-stats .container {
+        padding: 40px 10px;
+    }
+
+    .stats h4 {
+        font-size: 16px;
+    }
+
+    .stats h5 {
+        font-size: 12px;
+    }
+    
+    .stats i {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    
+    .bi-airplane {
+        width: 15px;
+        height: 15px;
+        margin: 10px 0;
     }
 }
 
@@ -1408,7 +1496,7 @@ section::before {
         width: 120px;
         font-size: 11px;
     }
-    
+
     .about-section-a h4 {
         font-size: 26px;
     }
@@ -1441,6 +1529,33 @@ section::before {
         font-size: 20px;
     }
 
+    .about-ticks p {
+        width: auto;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    #counter-stats .container {
+        padding: 40px 10px;
+    }
+
+    .stats h4 {
+        font-size: 18px;
+    }
+
+    .stats h5 {
+        font-size: 15px;
+    }
+    
+    .stats i {
+        font-size: 20px;
+    }
+    
+    .bi-airplane {
+        width: 20px;
+        height: 20px;
+        margin: 5px 0;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1564,7 +1679,23 @@ section::before {
         width: 150px;
     }
 
+    .stats h4 {
+        font-size: 19px;
+    }
 
+    .stats h5 {
+        font-size: 17px;
+    }
+    
+    .stats i {
+        font-size: 30px;
+    }
+    
+    .bi-airplane {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1650,6 +1781,30 @@ section::before {
 
     .contact-overlay {
         height: 45vh
+    }
+
+    .stats h4 {
+        font-size: 19px;
+    }
+
+    .stats h5 {
+        font-size: 17px;
+    }
+    
+    .stats i {
+        font-size: 30px;
+    }
+    
+    .bi-airplane {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .row hr {
+        display: block;
     }
 }
 

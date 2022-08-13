@@ -81,16 +81,61 @@
             Private Charter Services.</h5>
         <h6>Ewa Jets brings new energy and approach to providing you the very best in private jet charter services.
         </h6>
-        <p>Our objective is to understand your individual needs and to take the stress out of your travel planning and the travel itself by delivering exceptional standards of quality, style, and service.</p>
+        <p>Our objective is to understand your individual needs and to take the stress out of your travel planning and
+            the travel itself by delivering exceptional standards of quality, style, and service.</p>
     </div>
 
     <div class="about-ticks">
         <ul>
-        <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Safe and Secure</span></li>
-        <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Global coverage & competitive pricing</span></li>
-        <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Speed, flexibility and comfort</span></li>
+            <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Safe and Secure</span></li>
+            <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Global coverage & competitive pricing</span>
+            </li>
+            <li><i class="bi bi-check-circle"></i> <span class="ticks-tags">Speed, flexibility and comfort</span></li>
         </ul>
-     </div>
+
+        <p>Whether you are traveling by private jet for business or pleasure we offer luxurious personalized service to
+            meet
+            your every need.
+            <br>
+            From booking your private jet charter flights to arranging transportation to and from the airport, we offer
+            diverse hospitality services including gourmet catering.
+            <br>
+            Private jet charter is far superior to any other mode of transportation. At Ewa Jets, we believe in the
+            power of private jet charter and can show you that private jet charter is easier and more cost-effective
+            than
+            you think. Ewa Jets makes private jet charter safe, simple, and convenient at a moments’ notice.</p>
+    </div>
+
+    <div id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5 stats">
+                    <i class="bi bi-person-plus"></i>
+                    <h4><span class="counting">4578</span>+</h4>
+                    <h5>TRUSTED CLIENTS</h5>
+                </div>
+                <hr>
+                <div class="col-lg-3 stats">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-airplane" viewBox="0 0 16 16">
+                        <path
+                            d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
+                    </svg>
+                    <h4><span class="counting">150</span>+</h4>
+                    <h5>COUNTRIES</h5>
+                    <hr>
+                </div>
+
+                <div class="col-lg-3 stats">
+                    <i class="bi bi-house-door"></i>
+                    <h4><span class="counting">574</span>+</h4>
+                    <h5>DESTINATIONS</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <div class="modal modal-success" tabindex="-1" role="dialog" id="myModal">
         <div class="modal-dialog">
@@ -229,6 +274,32 @@
                 $("#dropdown2").slideToggle();
                 $("#dropdown1").slideUp();
             })
+
+        // Stats Count
+
+        let nCount = selector => {
+            $(selector).each(function () {
+                $(this)
+                    .animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: "swing",
+                        step: function (value) {
+                            $(this).text(Math.ceil(value));
+                        }
+                    });
+            });
+        };
+
+        let a = 0;
+        $(window).scroll(function () {
+            let oTop = $(".stats").offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() >= oTop) {
+                a++;
+                nCount(".counting");
+            }
+        });
         });
 
 
@@ -287,6 +358,7 @@
                 return true;
             }
         });
+
     </script>
 </body>
 
