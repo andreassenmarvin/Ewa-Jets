@@ -1014,7 +1014,7 @@ section::before {
 }
 
 #counter-stats {
-    background: url("https://images.pond5.com/dark-world-map-animate-background-footage-126370447_iconl.jpeg");
+    background: url("/Assets/stats-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
