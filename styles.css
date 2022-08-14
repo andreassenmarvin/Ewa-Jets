@@ -755,7 +755,7 @@ input:focus~.highlight {
 
 .contact-header {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     max-width: 100%;
     object-fit: cover;
     object-position: center;
@@ -764,7 +764,7 @@ input:focus~.highlight {
 .contact-overlay {
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     background: rgba(44, 43, 43, 0.6);
 }
 
