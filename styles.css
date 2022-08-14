@@ -1036,7 +1036,7 @@ section::before {
     display: none;
     width: 40%;
     margin: auto;
-    border-color:lightblue;
+    border-color: lightblue;
 }
 
 .stats {
@@ -1063,6 +1063,37 @@ section::before {
     height: 40px;
     margin: 6px 0;
     color: white;
+}
+
+#spy {
+    margin: 50px;
+}
+
+#spy .nav-link {
+    padding: 20px;
+}
+
+.ambulance-flex {
+    width: auto;
+    height: 60vh;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.ambulance-text {
+    display: grid;
+    place-content: center;
+}
+
+.ambulance-text h3 {
+    letter-spacing: 0.01em;
+}
+
+.ambulance-text p {
+    width: 800px;
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    color: rgb(70, 68, 68);
 }
 
 @media (max-width: 1200px) {
@@ -1356,16 +1387,41 @@ section::before {
     .stats h5 {
         font-size: 12px;
     }
-    
+
     .stats i {
         font-size: 15px;
         padding: 10px 0;
     }
-    
+
     .bi-airplane {
         width: 15px;
         height: 15px;
         margin: 10px 0;
+    }
+
+    #spy .nav-link {
+        width: auto;
+        padding: 12px;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .ambulance-flex {
+        width: 70vw;
+        height: 25vh;
+        border-radius: 4px;
+    }
+    
+    .ambulance-text h3 {
+        font-size: 16px;
+        margin-top: 30px;
+        padding: 7px;
+    }
+    
+    .ambulance-text p {
+        width: auto;
+        font-size: 12px;
+        padding: 7px;
     }
 }
 
@@ -1546,15 +1602,45 @@ section::before {
     .stats h5 {
         font-size: 15px;
     }
-    
+
     .stats i {
         font-size: 20px;
     }
-    
+
     .bi-airplane {
         width: 20px;
         height: 20px;
         margin: 5px 0;
+    }
+
+    .ambulance-section {
+        display: flex;
+        align-items: center;
+    }
+
+    #spy .nav-link {
+        width: 70vw;
+        padding: 12px;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .ambulance-flex {
+        width: auto;
+        height: 30vh;
+        border-radius: 4px;
+    }
+    
+    .ambulance-text h3 {
+        font-size: 17px;
+        margin-top: 30px;
+        padding: 7px;
+    }
+    
+    .ambulance-text p {
+        width: auto;
+        font-size: 13px;
+        padding: 7px;
     }
 }
 
@@ -1686,15 +1772,50 @@ section::before {
     .stats h5 {
         font-size: 17px;
     }
-    
+
     .stats i {
         font-size: 30px;
     }
-    
+
     .bi-airplane {
         width: 30px;
         height: 30px;
         margin: 5px 0;
+    }
+
+    .ambulance-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #spy {
+        margin: 50px;
+    }
+    
+    #spy .nav-link {
+        width: 70vw;
+        padding: 13px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .ambulance-flex {
+        width: auto;
+        height: 40vh;
+        margin: auto;
+        border-radius: 8px;
+    }
+    
+    .ambulance-text h3 {
+        font-size: 20px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    
+    .ambulance-text p {
+        width: auto;
+        font-size: 15px;
+        padding: 10px;
     }
 }
 
@@ -1790,15 +1911,36 @@ section::before {
     .stats h5 {
         font-size: 17px;
     }
-    
+
     .stats i {
         font-size: 30px;
     }
-    
+
     .bi-airplane {
         width: 30px;
         height: 30px;
         margin: 5px 0;
+    }
+    
+    #spy .nav-link {
+        padding: 13px;
+        font-size: 16px;
+    }
+    
+    .ambulance-flex {
+        width: 45vw;
+        height: 45vh;
+        margin: auto;
+        border-radius: 8px;
+    }
+    
+    .ambulance-text h3 {
+        font-size: 24px;
+    }
+    
+    .ambulance-text p {
+        width: 700px;
+        font-size: 17px;
     }
 }
 
